@@ -1,1 +1,4 @@
 # Initial dependencies
+requests
+bs4
+pandas
