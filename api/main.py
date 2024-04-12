@@ -3,7 +3,7 @@ from typing import List
 import pandas as pd
 
 # Load the data into a pandas DataFrame
-data = pd.read_csv("../data/final_df.csv")
+data = pd.read_csv("api/data/final_df.csv")
 
 # Initialize FastAPI app
 app = FastAPI()
