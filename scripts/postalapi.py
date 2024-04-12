@@ -3,8 +3,6 @@ from pydantic import BaseModel
 import pandas as pd
 from pathlib import Path
 
-# print(Path.cwd('/data'))
-# print(Path.home())
 path_lib = f"{Path.cwd()}\data"
 # Load the data into a pandas DataFrame
 data = pd.read_csv('final_df.csv')
@@ -22,7 +20,6 @@ class Location(BaseModel):
 # Initialize FastAPI app
 app = FastAPI()
 
-# Endpoint to get all locations
 # Endpoint to get all locations
 @app.get("/locations/")
 async def get_locations():
