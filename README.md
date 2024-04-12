@@ -41,3 +41,5 @@ To serve the scraped postal code data over an endpoint using FastAPI:
 Abuja (Capital)
 
 Gwagwalada
+
+`http://127.0.0.1:8000/locations/Abuja (Capital)/Asokoro`
