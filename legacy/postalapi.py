@@ -5,7 +5,7 @@ from pathlib import Path
 
 path_lib = f"{Path.cwd()}\data"
 # Load the data into a pandas DataFrame
-data = pd.read_csv('final_df.csv')
+data = pd.read_csv('data/final_df.csv')
 
 # Define Pydantic model
 class Location(BaseModel):

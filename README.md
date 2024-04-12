@@ -36,3 +36,8 @@ To serve the scraped postal code data over an endpoint using FastAPI:
 2. Define endpoints to serve the postal code data to clients.
 3. Implement logic to handle requests and serve the data.
 4. Deploy the FastAPI application to a server or cloud platform.
+
+
+Abuja (Capital)
+
+Gwagwalada
