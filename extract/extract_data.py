@@ -99,6 +99,7 @@ def main():
     merged_data = merged_data[['District', 'Area', 'Street', 'Postal Code']]
     remaining_data = df[df['District'] != 'Abuja']
     merged_data = pd.concat([merged_data, remaining_data], ignore_index=True)
+    merged_data['District'] = merged_data['District'].str.replace(' (Capital)', '')
 
     # Exporting dataframe
     merged_data.to_csv('../data/extract-fct-postal-codes.csv', index=False, float_format='%.0f')
