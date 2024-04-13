@@ -49,6 +49,23 @@ async def get_district_location(district: str):
             raise HTTPException(status_code=404, detail="Location not found")
     except KeyError:
         raise HTTPException(status_code=404, detail="Location not found")
+    
+# Endpoint to get locations by district
+@app.get("/locations/{postalcode}", response_model=List[dict])
+async def get_postalcode_location(postalcode: str):
+    """
+    Retrieve locations by postal code.
+    """
+    try:
+        # Filter the data by District and Area
+        district_data = data[(data['Postal Code'] == postalcode)]
+        
+        if not district_data.empty:
+            return clean_data(district_data)
+        else:
+            raise HTTPException(status_code=404, detail="Location not found")
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Location not found")
 
 @app.get("/locations/{district}/{area}")
 async def get_district_area_locations(district: str, area: str):
