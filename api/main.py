@@ -57,7 +57,7 @@ async def get_postalcode_location(postalcode: str):
     Retrieve locations by postal code.
     """
     try:
-        # Filter the data by District and Area
+        # Filter the data by postal code
         district_data = data[(data['Postal Code'] == postalcode)]
         
         if not district_data.empty:
