@@ -2,7 +2,7 @@
 
 ## Description
 
-This project aims to scrape postal code data for the Federal Capital Territory (FCT) of Nigeria from the website "zipcode.com.ng". The scraped data includes postal codes, areas, streets, and districts within the FCT. Additionally, it provides an API endpoint built with FastAPI to serve the scraped and parsed data to clients.
+This project aims to scrape postal code data for the Federal Capital Territory (FCT) of Nigeria from the website "zipcode.com.ng". The scraped data includes postal codes, areas, streets, and districts within the FCT. Additionally, it provides an API endpoint built with FastAPI to serve the scraped and parsed data to clients. https://www.zipcode.com.ng/
 
 ## Features
 
